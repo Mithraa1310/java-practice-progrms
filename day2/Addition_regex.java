@@ -11,7 +11,13 @@ public class Addition_regex {
 		  /*String str="asdf1qwer9as8d7";
 		   String changed=str.replaceAll("\\D", "");
 		  System.out.println(changed); */
-		  
+		  int sol = 0;
+		int num = Integer.parseInt(changed);
+		while (num > 0) {
+			sol += num % 10;
+			num /= 10;
+		}
+		System.out.println(sol);
 		 
 	}
 }
